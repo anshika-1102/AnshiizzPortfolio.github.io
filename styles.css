@@ -340,6 +340,7 @@ nav .fa-solid{
 @media only screen and (max-width: 600px) {
     #header{
         background-image: url(images/phone-background.jpg);
+        width: 100%;
     }
     .header-text{
         margin-top: 100%;
@@ -382,8 +383,17 @@ nav .fa-solid{
     .about-col-1{
         margin-bottom: 30px;
     }
+    .about-col-1 img{
+        width: 100%;
+    }
     .about-col-2{
         font-size: 14px;
+    }
+    .services-list{
+        display: block;
+    }
+    .work-list{
+        display: block;
     }
     .tab-links{
         font-size: 16px;

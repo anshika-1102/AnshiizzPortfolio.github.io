@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=""UTF-8">
+    <meta http-equipv=""X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Anshizz Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a68f82c9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Welcome to my gallery of creativity!</p>
+            <h1>Hello! I'm <br><span>Anshika </span>Rewliya</h1> 
+            </h1>
+        </div>
+    </div>
+</div>
+
+<!---------about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me<Menu></Menu></h1>
+                <p>With a keen interest in technology and a drive to learn, 
+                    I'm a BTech undergraduate with a passion for problem-solving. 
+                    Though I'm still a beginner, I excel at tackling real-world challenges. 
+                    Proficient in web and app design, I actively participate in hackathons to sharpen my skills. 
+                    I may be new to the field, but my enthusiasm and dedication make me a fast learner. 
+                    I'm eager to expand my knowledge and contribute positively to any project. 
+                    Let's connect and create something amazing together!
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing intuitive and user-friendly Web/App interfaces.</li>
+                        <li><span>Web Development</span><br>Building visually appealing and responsive front-end Web Apps.</li>
+                        <li><span>Data Visualization</span><br>Creating visual representations to convey complex information effectively.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>May 2023 - July 2023</span><br>Summer Research Intern Program at IGDTUW</li>
+                        <p><span>Title: </span>Visual Computing with PyTorch<br>Actively participated in workshops and training sessions, 
+                            focusing on advanced computer vision techniques. Developed and compared EfficientNet, ResNet50, and VGG16 models 
+                            in PyTorch for Facial Emotion Recognition, leading to the identification of the top-performing model. 
+                            Authored a research paper on the comparative analysis.
+                            <a href="https://github.com/anshika-1102/Facial_Emotion_Recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Nov 2022- Present</span><br>B.Tech. 2nd Year - Computer Science with Artificial Intelligence(CSE-AI) at Indira Gandhi Delhi Technical University for Women (CGPA: 9.1)</li>
+                        <li><span>2021-2022</span><br> Std. 12th(CBSE) from Modern Public School (94.4%)</li>
+                        <li><span>2019-2020</span><br> Std. 10th(CBSE) from Modern Public School (95%)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------services------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front End Development</h2>
+                <p>I specialize in building visually appealing and responsive front-end interfaces 
+                    using HTML, CSS, and JavaScript to enhance user experience.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I create intuitive and user-friendly interfaces by focusing on user experience 
+                    principles and design best practices to optimize usability.
+                </p>
+                <a href="https://github.com/anshika-1102/UI-UX-Designs">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Visualization</h2>
+                <p>I specialize in creating insightful visual representations of data to 
+                    facilitate understanding and decision-making processes.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Apache Log File Analysis</h3>
+                    <p>Parsed Apache log files to extract IP addresses, timestamps, platform, URLs, 
+                        and response codes, ensuring comprehensive data understanding. </p>
+                    <a href="https://github.com/anshika-1102/Apache_log_file_analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Manoday</h3>
+                    <p>Created user flow and software diagrams for Manoday mental health app and 
+                        designed UI-UX for accessibility and intuitive interaction.</p>
+                    <a href="https://github.com/anshika-1102/UI-UX-Designs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpeg">
+                <div class="layer">
+                    <h3>EthicalWebGuard</h3>
+                    <p>Implemented BERT-based models in Python/Flask to detect dark patterns
+                        and developed user-friendly UI/UX for browser extension, enhancing website usability.</p>
+                    <a href="https://github.com/anshika-1102/Dark-Pattern-Identification-on-e-Commerce-Platforms"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>anshikarewliya11@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+919891369393</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anshika-rewliya/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/anshika-1102"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://x.com/anshikarewliya?t=LpJLB92tj7-9PisK6Uv-3w&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://discord.com/invite/7GpBNuyK"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="images/Anshika Rewliya (Resume).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © Anshika.<i class="fa-regular fa-face-laugh-beam"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwO9v_vsFVY7vQ7HcExB8HR_CYIHCR4hYbUYh7nY2tJ--Ez2Ds38dwwN0khrtm0dj_b/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

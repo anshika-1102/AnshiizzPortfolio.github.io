@@ -379,21 +379,28 @@ nav .fa-solid{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
     }
     .about-col-1{
         margin-bottom: 30px;
     }
     .about-col-1 img{
         width: 100%;
+        max-width: 100%; 
+        height: auto;
     }
     .about-col-2{
         font-size: 14px;
     }
-    .services-list{
+    .services-list, .work-list {
         display: block;
+        margin-left: 20px; 
     }
-    .work-list{
-        display: block;
+    .services-list li, .work-list li {
+        margin-bottom: 10px;
     }
     .tab-links{
         font-size: 16px;
